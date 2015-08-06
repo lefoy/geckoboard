@@ -1,0 +1,17 @@
+{
+  "name": "geckoboard",
+  "version": "1.0.0",
+  "description": "Custom Geckoboard Widgets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^1.4.0",
+    "numeral": "^1.5.3",
+    "request": "^2.60.0",
+    "twig": "^0.8.2"
+  }
+}

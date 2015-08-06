@@ -1,0 +1,25 @@
+<div class="twitch-streams-widget" style="height: 360px; overflow: scroll;">
+    {% for stream in streams %}
+        <div class="stream" style="margin-bottom: 16px; background-color: #1f1f1f;  font-size: 0;">
+            <a href="{{stream.url}}" target="_blank" style="display: block; text-decoration: none;">
+                <div style="width: 175px; display: inline-block; vertical-align: middle; margin-right: 20px;">
+                    <img src="{{stream.preview.medium}}" style="max-width: 100%" alt="Stream preview">
+                </div>
+                <div style="display: inline-block; vertical-align: middle;">
+                    <div style="width: 18px; display: inline-block; vertical-align: middle; margin-right: 5px;">
+                        <img src="{{stream.logo}}" style="max-width: 100%" alt="{{stream.name}}">
+                    </div>
+                    <div style="display: inline-block; vertical-align: middle; font-size: 20px;">
+                        {{stream.name}}
+                    </div>
+                    <div style="font-size: 14px;">
+                        {{stream.viewers}} viewers
+                    </div>
+                    <div style="font-size: 14px;">
+                        {{stream.followers}} followers
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
